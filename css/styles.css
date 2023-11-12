@@ -988,20 +988,28 @@ img {
     }
 
     /*========================PORTFOLIO===================*/
+    /*-----------PORTFOLIO-SECTION-------------*/
+    /*------BUTTONS-------*/
     .portfolio-section {
         padding-top: 48px;
         padding-bottom: 48px;
     }
     
-    .portfolio-menu {
+    .first-row-buttons {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        width: 263px;
-        height: 96px;
-        gap: 12px;
-        row-gap: 16px;
+        min-width: 263px;
+        height: 40px;
+        gap: 24px;
+        margin-bottom: 16px;
+    }
+
+    .second-row-buttons {
+        display: flex;
+        flex-direction: row;
+        width: 219px;
+        height: 40px;
+        gap: 24px;
         margin-bottom: 48px;
     }
     
@@ -1022,14 +1030,192 @@ img {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     
+    .portfolio-buttons:hover {
+        color: var(--WHITE);
+        background-color: var(--OCEAN);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        border: 1px solid transparent
+    }
+    
+    .portfolio-buttons:focus {
+        color: var(--WHITE);
+        background-color: var(--OCEAN);
+        box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+        border: 1px solid transparent
+    }
 
+    /*----------POTFOLIO-----------*/
+    .list-of-links {
+    flex-basis: calc((100% - 48px) / 3);
+    margin-bottom: 48px;
+    }
 
+    .list-of-links:focus,
+    .list-of-links:hover {
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    }
+    .portfolio-project {
+        display: block;
+        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .portfolio-project:focus .image-paragraph{
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        transform: translateY(0);
+    }
+    
+    .portfolio-project:hover .image-paragraph {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        transform: translateY(0);
+    }
+    
+    .portfolio-image-container {
+        position: relative;
+        overflow: hidden;
+    }
 
+    .portfolio-image {
+        width: 396px;
+        height: 280px;
+    }
+    .image-paragraph {
+        position: absolute;
+        color: var(--CLOUD);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        padding: 40px 32px;
+        top: 0;
+        background-color: var(--IRIS);
+        height: 100%;
+        width: 100%;
+        transform: translateY(100%);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .portfolio-links {
+        padding: 32px 16px;
+        border: 1px solid var(--CORNFLOWER);
+        border-top: none
+    }
+    
+    .portfolio-headings {
+        color: var(--NAVY-BLUE);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.4px;
+        margin-bottom: 8px;
+    }
+    .portfolio-paragraphs {
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        color: var(--SLATE);
+    }
 
     }
   /* ============================= TABLET ============================= */
 @media screen and (min-width: 768px) {
-    /* cały kod */
+    /*========================STUDIO======================*/
+    /*------------HEADER-------------- */
+    .header {
+        border-bottom: 1px solid var(--CORNFLOWER);
+        height: 72px;
+        box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 1.17;
+        letter-spacing: 0.54px;
+        text-decoration: none;
+        color: var(--IRIS);
+        text-transform: uppercase;
+        margin-top: 25.5px;
+    }
+
+    .studio {
+        color: var(--NAVY-BLUE)
+    }
+
+    .menu-hamburger {
+        display: none;
+    }
+    .navigation {
+        display: inline-flex;
+        align-items: center;
+    }
+    
+    .list-navigation {
+        display: flex;
+        gap: 40px;
+        margin-top: 24px;
+    }
+    
+    .list-navigation a {
+        padding: 26px 0;
+    }
+    .list-studio {
+        position: relative;
+        color: var(--OCEAN);  
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    } 
+    
+    .list-studio::after {
+        position: absolute; 
+        content: '';     
+        width: 100%;     
+        border-radius: 2px;     
+        height: 4px;     
+        bottom: -1px;     
+        left: 0;     
+        background-color: var(--OCEAN);
+    }
+    
+    .list .link:hover {
+        color: var(--OCEAN);
+    }
+    
+    .list .link:focus {
+        color: var(--OCEAN);
+    }
+    
+    .address {
+        display: flex;
+        margin: 0 auto;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        list-style: none;
+        margin-top: 24px;
+    }
+    
+    .address-list {
+        display: flex;
+        gap: 40px; 
+    }
+    
+    .contacts {
+        color: var(--SLATE);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
 }
   /* ========================= NOT DESKTOP ====================== */
 @media screen and (max-width: 1157px) {
