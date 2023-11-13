@@ -165,7 +165,6 @@ img {
     }
 
     .hamburger-navigation {
-        margin:
         padding-left: 40px; 
         padding-top: 80px;
     }
@@ -2940,7 +2939,9 @@ img {
     gap: 24px;
     margin-bottom: 72px;
 }
-
+.first-row-buttons {
+    margin-right: 0;
+}
 .portfolio-buttons {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -3055,3 +3056,4 @@ img {
 
 
 
+}
