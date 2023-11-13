@@ -66,7 +66,7 @@ img {
     }
 
     .container {
-        width: 428px;
+        min-width: 428px;
         margin: 0 auto;
         padding: 0 15px;
     }
@@ -303,7 +303,7 @@ img {
     /*-------------------FIRST-SECTION--------------------*/
     .first-section {
         display: flex;
-        max-width: 428px;
+        min-width: 428px;
         margin: 0 auto;
         padding-top: 112px;
         padding-bottom: 112px;
@@ -1115,6 +1115,10 @@ img {
     }
   /* ============================= TABLET ============================= */
 @media screen and (min-width: 768px) {
+    .body {
+        overflow: hidden;
+    }
+
     .container {
         max-width: 768px;
         padding: 0 16px 0 16px;
@@ -1130,7 +1134,7 @@ img {
     .header-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .logo {
@@ -1223,7 +1227,7 @@ img {
     
     /*------------------FIRST-SECTION-------------------*/
     .first-section {
-        max-width: 769px;
+        min-width: 769px;
         margin: 0 auto;
         padding-top: 112px;
         padding-bottom: 112px;
@@ -1231,9 +1235,8 @@ img {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        align-items: center;
-        justify-content: center;
     }
+
     .first-section h1 {
         text-align: center;
         font-family: Roboto;
@@ -1244,7 +1247,6 @@ img {
         letter-spacing: 1.12px;
         color: var(--WHITE);
         max-width: 496px;
-        margin-left: 136px;
     }
     
     .order-service {
@@ -2078,7 +2080,6 @@ img {
 @media screen and (min-width: 1158px) {
     .container {
         min-width: 1158px;
-        padding: 0 156px;
     }
     /*======================STUDIO=======================*/
 /*----------------------HEADER-----------------------*/
@@ -2091,6 +2092,7 @@ img {
     .header-container {
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .logo {
@@ -2103,6 +2105,7 @@ img {
         color: var(--IRIS);
         text-transform: uppercase;
         margin-right: 76px;
+        margin-left: 100px;
     }
 
     .studio {
@@ -2110,7 +2113,7 @@ img {
     }
 
     .navigation {
-        display: inline-flex;
+        display: flex;
         align-items: center;
         margin-right: 0;
         margin-top: 25px;
@@ -2163,7 +2166,6 @@ img {
     
     .address {
         display: flex;
-        justify-content: flex-end;
         width: auto;
         flex-wrap: nowrap;
         display: flex;
@@ -2171,6 +2173,7 @@ img {
         padding-top: 0;
         margin-top: 0;
         margin-right: 0;
+        margin-left: 220px;
     }
 
     .address-list {
@@ -2185,6 +2188,12 @@ img {
     }
 
     .contacts {
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5; 
+        letter-spacing: 0.32px;
         color: var(--SLATE);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -2213,7 +2222,7 @@ img {
         letter-spacing: 1.12px;
         color: var(--WHITE);
         max-width: 496px;
-        margin-left: 316px;
+        margin-left: 472px;
     }
     
     .order-service {
@@ -2230,7 +2239,7 @@ img {
         height: 56px;
         border: none;
         border-radius: 4px;
-        margin-left: 480px;
+        margin-left: 632px;
         margin-top: 48px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -2743,18 +2752,21 @@ img {
     color: var(--CLOUD);
     padding: 100px 0;
 }
+.tablet-footer-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+}
 
 .footer-container {
     display: flex;
-    justify-content: flex-start
-    ;
-    flex-direction: row;
+    justify-content: flex-start;
     align-items: baseline;
 }
 
 .first-part-footer {
-    align-items: center;
-    padding: 0;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .footer-logo {
@@ -2780,11 +2792,11 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.32px;
-    max-width: 264px;
+    min-width: 264px;
 }
 
 .second-part-footer {
-    align-items: center;
+    margin-left: 120px;
 }
 .second-part-footer-paragraph {
     color: var(--WHITE);
@@ -2841,7 +2853,7 @@ img {
 
 /*------FORM------*/
 .form-container {
-    margin-left: 80px;
+    margin-bottom: px;
 }
 
 .subscribe-paragraph {
@@ -2876,7 +2888,6 @@ img {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.48px;
-    padding-left: 16px;
     width: 264px;
     height: 40px;
     gap: 24px;
@@ -2930,11 +2941,11 @@ img {
 .portfolio-section {
     padding-top: 96px;
     padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
 }
 
 .portfolio-menu {
-    display: flex;
-    justify-content: center;
     gap: 24px;
     margin-bottom: 72px;
 }
