@@ -2780,8 +2780,8 @@ img {
     text-transform: uppercase;
     margin-bottom: 17.5px;
     display: inline-block;
-    margin-bottom: 16px;
     margin-top: 0;
+    margin-left: 0;
 }
 
 .footer .studio {
@@ -2852,10 +2852,6 @@ img {
 }
 
 /*------FORM------*/
-.form-container {
-    margin-bottom: px;
-}
-
 .subscribe-paragraph {
     color: var(--WHITE);
     font-family: Roboto;
@@ -2869,11 +2865,6 @@ img {
 
 .newsletter-form {
     display: flex;
-    gap: 24px;
-}
-
-.newsletter-label {
-    gap: 24px;
 }
 
 .newsletter-input {
@@ -2890,7 +2881,6 @@ img {
     letter-spacing: 0.48px;
     width: 264px;
     height: 40px;
-    gap: 24px;
 }
 
 .newsletter-button {
@@ -2913,6 +2903,7 @@ img {
     min-width: 165px;
     height: 40px;
     cursor: pointer; 
+    margin-left: 0;
 }
 
 .newsletter-svg {
