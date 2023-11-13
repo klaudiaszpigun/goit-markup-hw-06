@@ -60,13 +60,13 @@ img {
 }
 
 /* ================================ MOBILE ================================== */
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
     .body {
         overflow: hidden;
     }
 
     .container {
-        min-width: 428px;
+        max-width: 428px;
         margin: 0 auto;
         padding: 0 15px;
     }
@@ -86,6 +86,7 @@ img {
         margin-top: 24px;
         margin-right: 16px;
         margin-bottom: 24px;
+        margin-left: 0;
     }
 
     .open-burger {
@@ -264,11 +265,13 @@ img {
         border-bottom: 1px solid var(--CORNFLOWER);
         height: 72px;
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+        display: flex;
     }
 
     .header-container {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     .logo {
@@ -302,7 +305,7 @@ img {
     /*-------------------FIRST-SECTION--------------------*/
     .first-section {
         display: flex;
-        min-width: 428px;
+        max-width: 428px;
         margin: 0 auto;
         padding-top: 112px;
         padding-bottom: 112px;
@@ -327,11 +330,13 @@ img {
         line-height: 1.1;
         letter-spacing: 0.72px;
         text-transform: capitalize;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
+        text-align: center;
     }
 
     .order-service {
         display: block;
+        margin: 0 auto;
         line-height: 1.5;
         letter-spacing: 0.04em;
         background-color: var(--IRIS);
@@ -344,7 +349,6 @@ img {
         height: 56px;
         border: none;
         border-radius: 4px;
-        margin-left: 113px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -625,6 +629,9 @@ img {
         display: block;
     }
 
+    .about-us-list-item {
+        margin-bottom: 72px;
+    }
     .second-section-headings {
         justify-content: center;
         align-items: center;
@@ -652,7 +659,6 @@ img {
         align-self: stretch;
         justify-content: center;
         align-items: center;
-        padding-bottom: 72px;
     }
 
     /*--------------THIRD-SECTION--------------*/
@@ -687,7 +693,7 @@ img {
         background: var(--WHITE);
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-        margin-left: 69px;
+        margin: 0 auto;
         margin-top: 72px;
     }
     
@@ -778,16 +784,15 @@ img {
     
     .fifth-section-list {
         display: flex;
-        gap: 10px;
+        gap: 72px 24px;
         flex-wrap: wrap;
-        flex-basis: calc((100%-16px)/2);
+        justify-content: center;
     }
     
     .fifth-section-list-item {
-        width: 190px;
+        flex-basis: calc((100% - 24px)/2);
         height: 88px;
         cursor: pointer;
-        margin-bottom: 72px;
     }
 
     .fifth-section-list-item:hover,
@@ -840,27 +845,29 @@ img {
         line-height: 1.17;
         letter-spacing: 0.54px;
         text-transform: uppercase;
-        margin-bottom: 17.5px;
-        display: inline-block;
+        display: block;
         margin-bottom: 16px;
-        margin-top: 0;
-        margin-left: 140.2px;
+        text-align: center;
     }
     
     .footer .studio {
         color: var(--CLOUD);
     }
 
+    .first-part-footer {
+        margin-bottom: 72px;
+    }
     .first-part-footer-paragraph {
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.32px;
         max-width: 264px;
-        margin-left: 65px;
+        margin: 0 auto;
     }
 
     .second-part-footer {
         align-items: center;
+        margin-bottom: 72px;
     }
 
     .second-part-footer-paragraph {
@@ -872,8 +879,7 @@ img {
         line-height: 1.5;
         letter-spacing: 0.32px;
         margin-bottom: 16px;
-        margin-top: 72px;
-        margin-left: 151px;
+        text-align: center;
     }
     
     .footer-social-media-list {
@@ -921,8 +927,7 @@ img {
         line-height: 1.5;
         letter-spacing: 0.32px;
         margin-bottom: 16px;
-        margin-top: 72px;
-        margin-left: 161px;
+        text-align: center;
     }
 
     .newsletter-form {
@@ -946,13 +951,13 @@ img {
         line-height: 1.5;
         letter-spacing: 0.48px;
         padding-left: 16px;
-        width: 398px;
+        width: 100%;
         height: 40px;
         gap: 24px;
     }
 
     .newsletter-button {
-        display: inline-flex;
+        display: flex;
         padding: 8px 24px;
         justify-content: center;
         align-items: center;
@@ -968,16 +973,13 @@ img {
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.64px;
-        min-width: 165px;
+        width: 165px;
         height: 40px;
+        margin: 0 auto;
         cursor: pointer; 
         margin-top: 16px;
-        margin-left: 116px;
     }
 
-    .newsletter-svg {
-        margin-left: 16px;
-    }
 
     /*========================PORTFOLIO===================*/
     /*-----------PORTFOLIO-SECTION-------------*/
@@ -1235,8 +1237,16 @@ img {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        display: flex;
+        justify-content: center;
     }
 
+    .first-section-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .first-section h1 {
         text-align: center;
         font-family: Roboto;
@@ -1263,7 +1273,6 @@ img {
         height: 56px;
         border: none;
         border-radius: 4px;
-        margin-left: 300px;
         margin-top: 36px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -2082,18 +2091,24 @@ img {
     .container {
         min-width: 1158px;
     }
+    section {
+        padding: 120px 0;
+    }
     /*======================STUDIO=======================*/
 /*----------------------HEADER-----------------------*/
     .header {
         border-bottom: 1px solid var(--CORNFLOWER);
         height: 72px;
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .header-container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .logo {
@@ -2106,7 +2121,6 @@ img {
         color: var(--IRIS);
         text-transform: uppercase;
         margin-right: 76px;
-        margin-left: 100px;
     }
 
     .studio {
@@ -2117,7 +2131,6 @@ img {
         display: flex;
         align-items: center;
         margin-right: 0;
-        margin-top: 25px;
     }
 
     .list-navigation {
@@ -2174,14 +2187,12 @@ img {
         padding-top: 0;
         margin-top: 0;
         margin-right: 0;
-        margin-left: 220px;
     }
 
     .address-list {
         display: flex;
         flex-direction: row;
         gap: 40px;
-        margin-top: 24px;
         margin-right: 0;
     }
     .address-list:first-child {
@@ -2208,9 +2219,8 @@ img {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        align-items: center;
+        display: flex;
         justify-content: center;
-        margin-bottom: 120px;
     }
 
     .first-section h1 {
@@ -2223,9 +2233,15 @@ img {
         letter-spacing: 1.12px;
         color: var(--WHITE);
         max-width: 496px;
-        margin-left: 472px;
     }
     
+    .first-section-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .order-service {
         display: block;
         line-height: 1.5;
@@ -2236,11 +2252,11 @@ img {
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-size: 16px;
-        min-width: 169px;
+        max-width: 169px;
         height: 56px;
         border: none;
         border-radius: 4px;
-        margin-left: 632px;
+        margin: 0 auto;
         margin-top: 48px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -2512,10 +2528,6 @@ img {
     }
 
     /*---------------SECOND-SECTION---------------*/
-    .second-section {
-        padding: 120px 0;
-    }
-
     .about-us-list {
         display: flex;
         justify-content: center;
