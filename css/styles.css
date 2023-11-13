@@ -75,13 +75,10 @@ img {
     /*----------------------HEADER-----------------------*/
     
     /*------HAMBURGER-------*/
+    /* stylizacja przycisku który otwiera menu */
     .button-hamburger {
         border: none;
         background-color: var(--WHITE);
-    }
-
-    /* stylizacja przycisku który otwiera menu */
-    .menu-hamburger {
         display: flex;
         margin-top: 24px;
         margin-right: 16px;
@@ -265,7 +262,6 @@ img {
         border-bottom: 1px solid var(--CORNFLOWER);
         height: 72px;
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-        display: flex;
     }
 
     .header-container {
@@ -298,9 +294,7 @@ img {
         display: none;
     }
 
-    .menu-hamburger {
-        margin-left: 249px;
-    }
+
 
     /*-------------------FIRST-SECTION--------------------*/
     .first-section {
@@ -1145,7 +1139,7 @@ img {
     .header-container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .logo {
@@ -1164,7 +1158,7 @@ img {
         color: var(--NAVY-BLUE)
     }
 
-    .menu-hamburger {
+    .button-hamburger {
         display: none;
     }
     .navigation {
