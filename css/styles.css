@@ -632,7 +632,7 @@ img {
         display: block;
     }
 
-    .about-us-list-item {
+    .about-us-list-item:not(:last-child) {
         margin-bottom: 72px;
     }
     .second-section-headings {
