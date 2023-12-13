@@ -1,3 +1,126 @@
 {
-    "liveServer.settings.port": 5501
+  "editor.bracketPairColorization.enabled": true,
+  "liveServer.settings.port": 5501,
+  "editor.guides.bracketPairs": "active",
+  "workbench.startupEditor": "none",
+  "editor.wordWrap": "on",
+  "git.ignoreMissingGitWarning": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.cursorBlinking": "expand",
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 12,
+  "editor.fontFamily": "Fira Code iScript",
+  "editor.fontLigatures": true,
+  "window.newWindowDimensions": "maximized",
+  "window.restoreFullscreen": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "gitlens.advanced.messages": {
+    "suppressGitMissingWarning": true
+  },
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 12,
+  "git.ignoreRebaseWarning": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript", "typescript"],
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "support.type.primitive.ts",
+          "storage.type",
+          "keyword.operator.logical",
+          "storage.type.interface.js",
+          "storage.type.interface.ts",
+          "storage.type.interface.jsx",
+          "storage.type.interface.tsx",
+          "storage.type.function.js",
+          "storage.type.function.jsx",
+          "storage.type.function.ts",
+          "storage.type.function.tsx",
+          "comment",
+          "entity.name.type.class",
+          "keyword",
+          "storage.modifier",
+          "storage.type.class.js",
+          "storage.type.class.jsx",
+          "storage.type.class.ts",
+          "storage.type.class.tsx"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "storage.type.function.arrow.jsx",
+          "storage.type.function.arrow.tsx",
+          "storage.type.function.arrow.js",
+          "storage.type.function.arrow.ts",
+          "meta.class entity.name.type.class",
+          "variable.other.object.property",
+          "entity.other.attribute-name",
+          "variable.other.object.js",
+          "variable.other.object.jsx",
+          "variable.other.object.ts",
+          "variable.other.object.tsx",
+          "meta.var.expr",
+          "variable.other.constant",
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.decimal.jsx",
+          "constant.numeric.decimal.ts",
+          "constant.numeric.decimal.tsx",
+          "constant.numeric.json",
+          "entity.name.function"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.linkedEditing": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.suggestSelection": "first",
+  "cSpell.userWords": ["craco", "Formik", "uuidv", "Vibor"],
+  "cSpell.language": "en,en-GB,en-US,pl,pl-PL",
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "diffEditor.codeLens": true,
+  "diffEditor.renderSideBySide": true,
+  "editor.lineNumbers": "on",
+  "workbench.editor.showTabs": "multiple",
+  "editor.glyphMargin": true,
+  "terminal.integrated.cursorStyle": "line",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorSurroundingLines": 5,
+  "editor.cursorWidth": 2,
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "javascript.validate.enable": false,
+  "git.openRepositoryInParentFolders": "always",
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  "editor.stickyScroll.enabled": true,
+  "settingsSync.ignoredExtensions": ["github.copilot"],
+  "workbench.editor.empty.hint": "hidden",
+  "update.showReleaseNotes": false,
+  "window.zoomLevel": 1
 }
